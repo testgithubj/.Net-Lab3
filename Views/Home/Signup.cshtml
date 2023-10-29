@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+}
+
+<center>
+    <h2>Signup</h2>
+ 
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th>
+                    Name :
+                </th>
+                <td>
+                    <input type="text" value="@(Model == null ? "" :Model.Name)" name="Name" placeholder="Enter Your Name" />
+                   
+                </td>
+                <td>
+                    <span class="text-danger">@Html.ValidationMessage("Name")</span>
+                </td>
+            </tr>
+           <tr>
+               <th>
+                    User Id :
+               </th>
+               <td>
+                   <input type="text" name="UserId" value="@(Model == null ? "" :Model.UserId)" placeholder="Enter your UserId" />
+               </td>
+               <td>
+                   <span class="text-danger">@Html.ValidationMessage("UserId")</span>
+               </td>
+           </tr>
+           <tr>
+               <th>
+                   Password :
+               </th>
+               <td>
+                   <input type="password" name="Password" value="@(Model == null ? "" :Model.Password)" placeholder="Enter Your Password"/>
+               </td>
+               <td>
+                   <span class="text-danger">@Html.ValidationMessage("Password")</span>
+               </td>
+           </tr>
+            <tr>
+                <th>
+                    ID :
+                </th>
+                <td>
+                    <input type="text" name="Id" value="@(Model == null ? "" :Model.Id)" placeholder="{XX-XXXXX-X}"/>
+                </td>
+                <td>
+                    <span class="text-danger">@Html.ValidationMessage("Id")</span>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Email :
+                </th>
+                <td>
+                    <input type="email" name="Email" value="@(Model == null ? "" :Model.Email)" placeholder="Enter Your Email"/>
+                </td>
+                <td>
+                    <span class="text-danger">@Html.ValidationMessage("Email")</span>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Dob
+                </th>
+                <td>
+                    <input type="date" name="Dob" value="@(Model == null ? "" :Model.Dob)" placeholder="Enter Your Date Of Birth" />
+                </td>
+                <td>
+                    <span class="text-danger">@Html.ValidationMessage("Dob")</span>
+                </td>
+            </tr>
+           <tr>
+               <th>
+
+               </th>
+               <td>
+                   <input type="submit" value="Submit" class="btn btn-danger " />
+               </td>
+           </tr>
+     
+        </table>
+    </form>
+</center>
+
+

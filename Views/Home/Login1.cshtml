@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Login1";
+}
+
+<h2>
+  @ViewBag.Username
+    @ViewBag.ID
+    @ViewBag.Gender
+    @ViewBag.Profession
+    @ViewBag.Hobbies
+</h2>
+
+<center>
+    <h2>login1</h2>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <th>Name :</th>
+                <td><input type="text" class="form-control" name="Username" placeholder="Username" /></td>
+            </tr>
+            <tr>
+                <th>ID :</th>
+                <td><input type="number" class="form-control" name="Id" placeholder="Id" /></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" name="Gender" value="male">Male
+                    <input type="radio" name="Gender" value="female">Female
+                </td>
+            </tr>
+            <tr>
+                <th>Profession :</th>
+                <td>
+                    <select name="Profession">
+                        <option value="Teacher">Teacher</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Hobbies:
+                </th>
+                <td>
+                    <input type="checkbox" name="Hobbies" value="singing" />Singing
+                    <input type="checkbox" name="Hobbies" value="painting" />Painting
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login" class="btn btn-danger" />
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+</center>
